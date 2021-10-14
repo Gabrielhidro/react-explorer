@@ -1,4 +1,10 @@
+import RepositoryItem from "../RepositoryItem";
 import { Container } from "./styles";
+
+const repository = {
+  name: 'unform',
+  link: 'google'
+}
 
 export function RepositoryListPresentational(){
   return (
@@ -6,9 +12,7 @@ export function RepositoryListPresentational(){
       <h1>Lista de Repositórios</h1>
 
       <ul>
-        <li>
-          <strong>repo</strong>
-        </li>
+        <RepositoryItem repository={repository} />
       </ul>
     </Container>
   )
