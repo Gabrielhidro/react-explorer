@@ -1,3 +1,18 @@
+import { createElement } from "react";
 import { RepositoryListPresentational } from "./presentational";
 
-export default RepositoryListPresentational;
+function RepositoryList(){
+  
+  const repository = {
+    name: 'unform',
+    link: 'google'
+  }
+  
+  return (
+    createElement(RepositoryListPresentational, {
+      repository
+    })
+  )
+}
+
+export default RepositoryList;

@@ -1,12 +1,10 @@
 import RepositoryItem from "../RepositoryItem";
 import { Container } from "./styles";
 
-const repository = {
-  name: 'unform',
-  link: 'google'
-}
+export function RepositoryListPresentational(props){
 
-export function RepositoryListPresentational(){
+  const {repository} = props
+
   return (
     <Container>
       <h1>Lista de Repositórios</h1>
